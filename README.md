@@ -15,3 +15,7 @@ Proper format:
 
 Future plans:
 Just create new img attributes and overlay © information if those attributes exist. Otherwise leave the image as is.
+
+
+
+;
