@@ -1,17 +1,15 @@
 # Image-Credit-Overlay
 
-New format for including image credit overlays on images. Vanilla JS and CSS.
+Different format for including image credit overlays on images. Vanilla JS and CSS.
 
 
 
-Script looks for tag name <copyimg> with attributes src, copyName, and copyLink.
-
-Script replaces <copyimg> with a regular <img> of same src.
+Script replaces <img> elements containing data-srcname attributes and surrounds them in <divs> to contain copyright information overlay on the image.
 
 
 
-Image will have a © symbol on the bottom right of the image. 
-Hovering over the image will show the source/artist/author(copyName) attribute value. Clicking this will open the copyLink attribute value in a new window.
+Image will have a Â© symbol on the bottom right of the image. 
+Hovering over the image will show the source/artist/author(data-srcname) attribute value. Clicking this will open the data-srclink attribute value in a new window.
 
 
 
@@ -24,9 +22,9 @@ Link copy.js just above the closing </body> tag with <script src="copy.js></scri
 
 
 Proper format:
-<copyimg src="your_filename.png" copyName="SourceOfImage" copyLink="URLtoSource"></copyimg>
+<img src="imagename.ext" data-srcname="Bob's funny pictures" data-srclink="http://www.bobsfunnywebsite.com">
 
 
 
 Future plans:
-Just create new img attributes and overlay © information if those attributes exist. Otherwise leave the image as is.
+Better styling, better front-family, image width detection for div max-width.
