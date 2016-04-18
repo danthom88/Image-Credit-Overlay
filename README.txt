@@ -25,6 +25,3 @@ Proper format:
 <img src="imagename.ext" data-srcname="Bob's funny pictures" data-srclink="http://www.bobsfunnywebsite.com">
 
 
-
-Future plans:
-Better styling, better front-family, image width detection for div max-width.
